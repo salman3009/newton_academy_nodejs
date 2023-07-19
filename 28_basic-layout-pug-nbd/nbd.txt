@@ -1,0 +1,12 @@
+nbd:
+
+https://nitayneeman.com/posts/debugging-nodejs-application-in-chrome-devtools-using-ndb/
+
+Step1:
+npm install -g ndb
+step2:
+package.json 
+ "start": "ndb nodemon app.js"
+step 3: 
+npm run start 
+=================================================================

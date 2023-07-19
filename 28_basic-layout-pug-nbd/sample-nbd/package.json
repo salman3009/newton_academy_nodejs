@@ -1,0 +1,15 @@
+{
+  "name": "sample-nbd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "ndb nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ndb": "^1.1.5"
+  }
+}
