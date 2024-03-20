@@ -6,5 +6,5 @@ function subtraction(a,b){
     return a-b;
 }
 
-exports.addition = addition;
+exports.add = addition;
 exports.subtraction = subtraction;
