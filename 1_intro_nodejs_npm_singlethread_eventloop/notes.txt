@@ -31,3 +31,10 @@ Nodje architecture:
 Javascript which is running on inside the browser we have only one thread 
 Javascript which is running on outside the browser we have only one thread + internal thread pool if blocking operation is there.
 ============================================================
+Event Loop Nodejs:
+https://dev.to/endeavourmonk/nodejs-event-loop-46oo
+Event Driven:
+https://www.geeksforgeeks.org/explain-event-driven-programming-in-node-js/
+REST API:
+https://www.geeksforgeeks.org/what-is-rest-api-in-node-js/
+=========================================================

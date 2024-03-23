@@ -1,2 +1,10 @@
-Event Driven Architecture:
-//
+Events Emitter:
+
+Node.js uses events module to create and handle custom events. The EventEmitter class can be used to create and handle custom events module.
+The syntax to Import the events module are given below:
+
+Syntax:
+
+const EventEmitter = require('events');
+All EventEmitters emit the event newListener when new listeners are added and removeListener when existing listeners are removed. It also provide one more option:
+================================================================
