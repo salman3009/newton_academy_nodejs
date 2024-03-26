@@ -33,8 +33,46 @@ Javascript which is running on outside the browser we have only one thread + int
 ============================================================
 Event Loop Nodejs:
 https://dev.to/endeavourmonk/nodejs-event-loop-46oo
+
+
+
+
+
+
+======================================================
 Event Driven:
 https://www.geeksforgeeks.org/explain-event-driven-programming-in-node-js/
+
+A callback function ( called an event handler) is called when an event is triggered.
+An event loop that listens for event triggers and calls the corresponding event handler for that event.
+
+These ‘events’ can be accessed via the ‘events’ module and the EventEmitter class.
+Most of the in-built modules of Node.js inherit from the EventEmitter class
+
+The idea is simple – emitter objects send out named events, which trigger listeners that have already been registered
+===============================================================
 REST API:
 https://www.geeksforgeeks.org/what-is-rest-api-in-node-js/
+Notes:
+API:
+The API (Application Programming Interface) is a set of commands, functions, 
+or protocols that act as an intermediary that enables two applications to communicate
+
+REST: 
+REST stands for REpresentational State Transfer
+Representational State transfer means the transfer of the state of the Representation of the resource. 
+These representations are transferred via HTTP through various formats, including  JSON (Javascript Object Notation), HTML,XML or plain text. 
+The most popular file format is JSON because it can be read both by humans and machines
+
+REST works on the HTTP Protocol
+The resource can be accessed by the URI (Uniform Resource Identifier) or the URL
+methods POST, GET, PUT, PATCH, and DELETE.
+
+Benefits:
+Separate client and server
+REST is independent of platform and languages.
+Flexibility and scalability
+Not constrained by one data format.
+The HTTP cache can be used to optimize the network and increase efficiency.
+Easy to use and learn
 =========================================================
