@@ -26,7 +26,7 @@ app.use((req,res,next)=>{
 
 app.get('',(req,res)=>{
     console.log(req.salman);
-    res.send("<h1>hello world newton</h1>");
+    res.status(200).send("<h1>hello world newton</h1>");
 })
 
 app.get('/product/list',(req,res)=>{
