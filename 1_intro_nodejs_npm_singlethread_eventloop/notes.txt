@@ -33,10 +33,31 @@ Javascript which is running on outside the browser we have only one thread + int
 ============================================================
 Event Loop Nodejs:
 https://dev.to/endeavourmonk/nodejs-event-loop-46oo
+https://www.youtube.com/watch?v=y0aTs56DJWk
 
+Node.js is designed to be non-blocking and asynchronous, which allows it to efficiently handle a large number of I/O-bound operations without getting blocked by any single operation.
 
+1.
+Event loop 
+//manages all the asynchronous operations
+//new events in the event queue
 
+2.
+Event Queue
+//holds various types of events, such as callbacks, timers, and I/O events,
+//These events are added to the queue when they are triggered but are not executed immediately.
 
+3.
+Callbacks:
+Callbacks are functions that are provided as arguments to asynchronous functions
+
+4.
+I/O Operations
+reading from or writing to files, making network requests
+it does not block the execution of the rest of the program. Instead, it delegates the I/O operation to the operating system and registers a callback to be executed when the operation is complete.
+
+5.
+CPU-bound operations can still block the event loop and should be offloaded to worker threads or other processes to maintain the responsiveness of the application
 
 
 ======================================================

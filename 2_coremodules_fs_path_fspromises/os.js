@@ -8,3 +8,5 @@ console.log(arch);
 
 let freeMemory = global.freemem();
 console.log(freeMemory);
+
+console.log(global.cpus().length);
