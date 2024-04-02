@@ -46,7 +46,9 @@ app.patch("/api/v1/details/:id", (req, res) => {
   const updatedDetails = userDetails.find(
     (updatedDetails) => updatedDetails.id === id
   );
+  console.log(updatedDetails);
   const index = userDetails.indexOf(updatedDetails);
+  console.log(index);
   if (!updatedDetails) {
     return res.status(404).send({
       status: "failed",
