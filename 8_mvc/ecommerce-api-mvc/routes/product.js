@@ -9,7 +9,11 @@ router.use((req,res,next)=>{
     next();
 })
 
-router.get('',authMiddleware,productController.getListController);
+router.get('',authMiddleware,(req,res)=>{
+  res.status(200).json({
+    message:"success details"
+  })
+});
 
 
 module.exports = router;
