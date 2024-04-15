@@ -19,7 +19,9 @@
     "jsonwebtoken": "^8.5.1",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
-    "mongoose": "^5.13.17",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.11.2",
+    "package.json": "^2.0.1",
     "sinon": "^9.2.1"
   },
   "devDependencies": {

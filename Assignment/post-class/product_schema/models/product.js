@@ -1,23 +1,23 @@
 var mongoose= require("mongoose");
 
-var userSchema= mongoose.Schema({
+var productSchema= mongoose.Schema({
     name:{
         type: String,
         required:true
     },
-    Email:{
-        type: String,
+    Quantity:{
+        type: Number,
         required:true
     },
-    pswd:{
-        type: String,
+    Price:{
+        type: Number,
         required:true
     },
-    role:{
+    instock:{
         type: String,
         eneum: ['Yes', 'No']
     }
     
 });
 
-module.exports =mongoose.model("users",userSchema);
+module.exports =mongoose.model("products",productSchema);

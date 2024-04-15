@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const router = require('../controllers/userControllers');
+const router = require('../controllers/productControllers');
 
 //Router Middlewares
 app.use(express.json());
