@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const port = 3000;
 const secretKey = 'newtonSchool';
 
 app.use(bodyParser.json());
@@ -14,11 +13,16 @@ const users = [
   { id: 2, username: 'user2', password: 'password2' },
 ];
 
+// Mock product data
+const products = [
+  { id: 1, name: 'Product A', price: 10 },
+  { id: 2, name: 'Product B', price: 20 },
+];
+
 // Authentication endpoint
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
-  // Replace this with database queries in a real application
   const user = users.find(
     (u) => u.username === username && u.password === password
   );
@@ -36,7 +40,7 @@ app.post('/login', (req, res) => {
   res.status(201).json({ token });
 });
 
-app.get('/profile', (req, res) => {
+app.get('/product', (req, res) => {
   // Middleware to check for a valid JWT token
   const token = req.headers.authorization.split(' ')[1];
 
@@ -52,8 +56,10 @@ app.get('/profile', (req, res) => {
         .json({ message: 'Invalid token', error: err.message });
     }
 
-    // Token is valid, you can access the user's data from 'decoded'
-    res.status(201).json({ message: 'Profile data', user: decoded });
+    // Mock product data retrieval (replace with actual logic)
+    const productData = products;
+
+    res.status(200).json({ message: 'Product data', products: productData });
   });
 });
 
